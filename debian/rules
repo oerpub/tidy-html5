@@ -10,7 +10,11 @@ CONFIGXML=$(DOCDIR)/tidy-config.xml
 MANXSL=$(DOCDIR)/tidy1.xsl
 MANPAGE=debian/tidy.1
 
+makebuilddir/tidy::
+	/bin/sh build/gnuauto/setup.sh
+
 build/tidy::
+	$(MAKE) -C build/gmake
 	## Generate manpage from tidy output
 	LD_LIBRARY_PATH=$(CURDUR)/src/.libs/ \
 		$(CURDIR)/console/tidy -xml-help > $(HELPXML)
