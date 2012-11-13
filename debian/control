@@ -2,7 +2,7 @@ Source: tidy
 Section: web
 Priority: optional
 Maintainer: Jason Thomas <jason@debian.org>
-Build-Depends: debhelper (>= 7), cdbs, libtool, automake1.9, autoconf, perl, xsltproc
+Build-Depends: debhelper (>= 7), cdbs, libtool, automake1.9, autoconf, perl, xsltproc, quilt
 Standards-Version: 3.8.3.0
 Homepage: http://w3c.github.com/tidy-html5/
 
